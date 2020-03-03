@@ -1,12 +1,15 @@
 function getPrimes(a){
     let i = 0;
-    while(i<=a){
-
+    let t = a;
+    while(a > 0){
+        
         if(a>1){
-            if(a % 1 === 0 && a % a === 0){
-                console.log(i);   
+            if(a % 2 !== 0 ){
+                console.log(a);   
             }
         }
-        i++;
+        a--;
     }
 }
+
+const test = getPrimes(10);
