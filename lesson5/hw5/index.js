@@ -3,7 +3,7 @@ function findDivCount(a, b, n){
     while(a<=b){
         
         if(a % n === 0){
-            count++;
+            ++count;
         }
         else{
             return 0;
