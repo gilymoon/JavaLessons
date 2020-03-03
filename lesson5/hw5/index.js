@@ -4,6 +4,9 @@ function findDivCount(a, b, n){
         if(a % n === 0){
             count++;
         }
+        else{
+            return 0;
+        }
         a++;
     }
 }
