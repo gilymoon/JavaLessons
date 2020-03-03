@@ -2,7 +2,7 @@ let m = 1;
 let n = 20;
 let i = m;
 
-let reuslt = 0;
+let result = 0;
 
 while(i < n){
     if(i % 2 === 0 && i % 4 === 0){
