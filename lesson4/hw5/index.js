@@ -8,6 +8,7 @@ let rest = 0;
 
 while(i <= 1000){
     sum += i;
+    i++;
 }
 
 div = sum / 1234;
