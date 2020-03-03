@@ -4,8 +4,9 @@ function getSum(a, b){
         if(a % 2 === 0){
 
             sum+=a;
-            a++;
+            
         }
+        a++;
     }
     return sum;
 }
