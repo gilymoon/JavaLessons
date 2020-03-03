@@ -1,14 +1,17 @@
 function findDivCount(a, b, n){
     let count = 0;
-    while(a<=b){
+    let i = a;
+    while(i<=b){
         
-        if(a % n === 0){
+        if(i % n === 0){
             ++count;
         }
-        else{
-            return 0;
-        }
-        a++;
+        
+        i++;
     }
+    if(count === 0) return 0;
     return count;
 }
+
+let test = findDivCount(1, 20, 5);
+console.log(test);
