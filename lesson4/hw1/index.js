@@ -1,4 +1,4 @@
-let n = 7;
+const n = 7;
 let i = 1;
 let str = '';
 do{
