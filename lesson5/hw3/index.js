@@ -3,6 +3,6 @@ function increaser(a, index){
         return a + index;
     }
     else{
-        a=a;
+       return a=a;
     }
 }
