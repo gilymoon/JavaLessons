@@ -3,7 +3,7 @@ let m = 1000;
 let sum = 0;
 
 while(n <= m){
-    if(n%2 != 0){
+    if(n%2 === 1){
         console.log('Found');
         sum += n;
         if(sum * 5 > 5000){
