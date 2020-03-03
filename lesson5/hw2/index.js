@@ -1,12 +1,10 @@
 function getPrimes(a){
-    while(a > 0){
-        
-        if(a>1){
-            if(a % 2 !== 0 ){
-                console.log(a);   
-            }
+    for (let i = 2; i <= n; i++) {
+
+        for (let j = 2; j < i; j++) {
+            if (i % j === 0)  console.log(i);
         }
-        a--;
+       
     }
 }
 
