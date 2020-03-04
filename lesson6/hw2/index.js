@@ -3,11 +3,9 @@ function reverseArray(arr){
     let arr2 = arr;
     let arr3 = [];
     for(let i = 0; i < arr.length; i++){
-        arr3[i] = arr2.pop();
+        arr3[i] = arr2.length-i;
+    
     }
     return arr3;
 }
 
-let arr = [1, 2, 3, 4, 5];
-console.log(arr);
-console.log(reverseArray(arr));
