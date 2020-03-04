@@ -5,3 +5,4 @@ function swap(arr){
     
     return [...rest, start];
 }
+
