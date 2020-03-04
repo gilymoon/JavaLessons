@@ -1,8 +1,9 @@
 function squareArray(arr){
     if(!Array.isArray(arr)) return null;
-    const arr2 = arr;
+    let arr2 = arr;
+    let arr3 = [arr.length];
     for(let i = 0; i < arr.length; i++){
-        arr2[i] = arr[i] * arr[i]; 
+        arr3[i] = arr2[i] * arr2[i]; 
     }
-    return arr2;
+    return arr3;
 }
