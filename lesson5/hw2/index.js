@@ -6,7 +6,7 @@
               isPrime = false;
             }
           }
-        if (isPrime(i)) {
+        if (isPrime) {
           console.log(i);
         }
     }
