@@ -1,5 +1,3 @@
-function sortDesc(arr){
-    let arr1 = arr;
-    arr1.slice().sort((a, b) => b - a);
-    
-}
+
+const sortDesc = numbers =>
+numbers.slice().sort((a,b) => b - a);
