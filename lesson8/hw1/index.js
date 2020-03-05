@@ -1,5 +1,5 @@
 function pickProps(obj, arr){
-    const newObj = obj;
+    const newObj = {};
     for(let key in obj){
         
         for(let i = 0; i < arr.length; i++){
@@ -8,5 +8,7 @@ function pickProps(obj, arr){
             }
         }
     }
+    
+
     return newObj;
 }
