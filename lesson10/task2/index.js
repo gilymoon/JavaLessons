@@ -5,9 +5,9 @@ const getParsedIntegersV2 = arr =>
     arr.map(num => parseInt(num));
 
 
-const getParsedFloat = arr => 
+const getParsedFloats = arr => 
     arr.map(num => Number.parseFloat(num));
 
-const getParsedFloatV2 = arr =>
+const getParsedFloatsV2 = arr =>
     arr.map(num => parseFloat(num));
 
