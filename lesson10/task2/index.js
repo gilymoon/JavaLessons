@@ -1,13 +1,13 @@
-const getOarsedIntegers = arr =>
+const getParsedIntegers = arr =>
     arr.map(num => Number.parseInt(num));
 
-const getOarsedIntegersV2 = arr => 
+const getParsedIntegersV2 = arr => 
     arr.map(num => parseInt(num));
 
 
-const getOarsedFloat = arr => 
+const getParsedFloat = arr => 
     arr.map(num => Number.parseFloat(num));
 
-const getOarsedFloatV2 = arr =>
+const getParsedFloatV2 = arr =>
     arr.map(num => parseFloat(num));
 
