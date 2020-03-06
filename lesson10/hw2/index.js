@@ -1,9 +1,9 @@
-function getRandomNumbers(l, s, f){
-    if (Math.floor(s) >= Math.floor(f)) return null;
-    Math.abs(l);
-    Math.ceil(l);
-    let arr = [l];
-    return arr.fill().map(num => Math.round(Math.random() * (s - f) + f))
+function getRandomNumbers(len, start, finish){
+    if (Math.floor(start) >= Math.floor(finish)) return null;
+    Math.abs(len);
+    Math.ceil(len);
+    let arr = [len];
+    return arr.fill().map(num => Math.round(Math.random() * (start - finish) + finish))
 }
 
 console.log(getRandomNumbers(-0.1,0.1,10));
