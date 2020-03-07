@@ -4,6 +4,6 @@ function superRound(num, acc){
         Math.round(num * coma) / coma, 
         Math.ceil(num * coma) / coma, 
     Math.trunc(num * coma) / coma, 
-    +num.toFixed(coma)];
+    +num.toFixed(acc)];
     return arr;
 }
