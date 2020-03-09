@@ -1,4 +1,4 @@
-function splitString(str, num){
+function splitString(str, len){
      const strArr = [];
         let startPosition = 0;
        if (str === !(String)) return null;
@@ -6,10 +6,10 @@ function splitString(str, num){
            let chunk = str.substr(startPosition, len);
            if(chunk.length === 0) break;
            if (len === undefined) {
-               strArr.push((chunk[0].toUpperCase()) + chunk.slice(1));
+               strArr.push(chunk.slice(0));
                startPosition += 10;
            } else {
-               strArr.push((chunk[0].toUpperCase()) + chunk.slice(1));
+               strArr.push(chunk.slice(0));
                startPosition += len;
            }
    
