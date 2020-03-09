@@ -1,5 +1,5 @@
 function sortContacts(contacts, isAsc) {
-    if(contacts ==!Array.isArray()) return null;
+    if(!Array.isArray(contacts)) return null;
     const result = [];
     if(isAsc){
 
