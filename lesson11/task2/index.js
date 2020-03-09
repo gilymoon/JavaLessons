@@ -1,16 +1,16 @@
 function sortContacts(contacts, isAsc) {
     if(!Array.isArray(contacts)) return null;
-    const result = [];
+    const result = contacts;
     if(isAsc){
 
-       result = contacts
+       result
         .sort((a, b)=> {
             return a.name.localeCompare(b.name);
         });
         return result;
     }
     else{
-        result = contacts
+        result
         .sort((a, b)=> {
             return b.name.localeCompare(a.name);
         });
