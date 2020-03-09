@@ -3,5 +3,6 @@ function increaseEvenEl(arr, delta){
     let arr1 = arr;
     return arr1.map(el => {if(el%2===0){
         el+=delta;
+        return el;
     }});
 }
