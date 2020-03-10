@@ -1,9 +1,7 @@
 function withdraw(clients, balances, client, amount){
     let clientPos = clients.findIndex(client);
-   return balances.find(clientPos).map(el => {
-        if(el < amount) return -1;
-        else{
-           return el -= amount;
-        }
-    })
+    if(balances[clientPos] > amount){
+
+    }
+    return balances[clientPos] > amount ? balances[clientPos] -= amount : -1; 
 }
