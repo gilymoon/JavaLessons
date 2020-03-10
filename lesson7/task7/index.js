@@ -1,5 +1,5 @@
 function withdraw(clients, balances, client, amount){
-    let clientPos = clients.findIndex(client);
+    let clientPos = clients.indexOf(client);
     if(balances[clientPos] > amount){
         balances[clientPos] -= amount;
     }
