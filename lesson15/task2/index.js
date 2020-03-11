@@ -1,4 +1,4 @@
-export function createLogger () {
+export function createCalculator () {
     let memo = 0;
 
     const add = (num) => {

@@ -1,14 +1,14 @@
-import { createLogger } from './index'
+import { createCalculator } from './index'
 
 it('should return result', () => {
-    const calculator = createLogger();
+    const calculator = createCalculator();
     let result = calculator.getMemo();
 
     expect(result).toEqual(0);
 });
 
 it('should return sum', () => {
-    const calculator = createLogger();
+    const calculator = createCalculator();
     calculator.add(25)
     let result = calculator.getMemo();
 
@@ -16,14 +16,14 @@ it('should return sum', () => {
 });
 
 it('should return decrease', () => {
-    const calculator = createLogger();
+    const calculator = createCalculator();
     calculator.decrease(20)
     let result = calculator.getMemo();
 
     expect(result).toEqual(-20);
 });
 it('should return reset calculator', () => {
-    const calculator = createLogger();
+    const calculator = createCalculator();
     calculator.reset()
     let result = calculator.getMemo();
 
