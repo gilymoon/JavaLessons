@@ -1,4 +1,4 @@
-function createLogger () {
+export function createLogger () {
     let memo = 0;
 
     const add = (num) => {
