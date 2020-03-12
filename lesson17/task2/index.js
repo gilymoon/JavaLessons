@@ -8,3 +8,5 @@ const callbackPrompt = {
         setTimeout(this.showPrompt(), 1000)
     }
 }
+
+export {callbackPrompt};
