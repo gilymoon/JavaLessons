@@ -1,12 +1,12 @@
-var a = 17;
+let a = 17;
 
 if (a) {
-    function rand (){
+    
 
-        var a = 1;
+        let a = 1;
         
         console.log(a);
-    }
+    
     
 }
 
