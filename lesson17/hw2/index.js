@@ -2,7 +2,7 @@ const timer = {
     secondsPassed: 0,
     minsPassed: 0, 
     startTimer(){
-        setTimeout(() => {
+       this.start = setInterval(() => {
             if(secondsPassed>59){
                 this.secondsPassed = 0;
                 this.minsPassed++;
