@@ -4,7 +4,7 @@ const timer = {
     start: 0,
     startTimer(){
        this.start = setInterval(() => {
-            if(secondsPassed>59){
+            if(this.secondsPassed>59){
                 this.secondsPassed = 0;
                 this.minsPassed++;
             } 
