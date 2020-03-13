@@ -14,6 +14,9 @@ const timer = {
         if(this.secondsPassed<10){
             let secBefore10 = '0'+this.secondsPassed;
         }
+        else{
+            let secBefore10 = this.secondsPassed;
+        }
         return `${this.minsPassed}:${secBefore10}`;
     },
     stopTimer() {
