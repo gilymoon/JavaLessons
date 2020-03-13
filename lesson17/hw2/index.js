@@ -11,11 +11,12 @@ const timer = {
         }, 5000)
         },
     getTime(){
+        let secBefore10;
         if(this.secondsPassed<10){
-            let secBefore10 = '0'+this.secondsPassed;
+            secBefore10 = '0'+this.secondsPassed;
         }
         else{
-            let secBefore10 = this.secondsPassed;
+            secBefore10 = this.secondsPassed;
         }
         return `${this.minsPassed}:${secBefore10}`;
     },
