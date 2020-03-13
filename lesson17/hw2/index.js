@@ -8,7 +8,7 @@ const timer = {
                 this.secondsPassed = 0;
                 this.minsPassed++;
             } 
-            return this.secondsPassed+5;
+            return this.secondsPassed+=5;
         }, 5000)
         },
     getTime(){
