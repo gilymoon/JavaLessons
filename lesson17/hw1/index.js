@@ -6,8 +6,8 @@ const user = {
     },
     setFullName(fullName){
         let fName = fullName.split(" ");
-        this.name = fName[0];
-        this.sName = fName[1];
+        this.firstName = fName[0];
+        this.lastName = fName[1];
         
     }
 }
