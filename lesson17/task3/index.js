@@ -1,14 +1,6 @@
-function defer(func, ms){
-    return function(){
-        setTimeout(() => func.apply(this, arguments), ms);
+export const bind = (func, context, ...args) => {
+    return function(...targetArgs) {
+        return func.call(context, ...args, ...targetArgs);
     }
 }
 
-const user = {
-    name: 'Tom',
-    sayHi(){
-        console.log(`Hi, I'm ${this.name}!`)
-    }
-}
-
-export {defer};
