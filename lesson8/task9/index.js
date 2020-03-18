@@ -1,4 +1,4 @@
-function compareObjects(onj1, obj2){
+function compareObjects(obj1, obj2){
     const objKeys1 = Object.keys(obj1);
     const objKeys2 = Object.keys(obj2);
 
