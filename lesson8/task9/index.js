@@ -7,7 +7,7 @@ function compareObjects(onj1, obj2){
     }
 
     for(let key of objKeys2){
-        if(obj[key] !== obj2[key]){
+        if(obj1[key] !== obj2[key]){
             return false;
         }
     }
