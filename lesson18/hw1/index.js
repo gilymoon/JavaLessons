@@ -1,9 +1,9 @@
 function saveCalls (func) {
     function arg() {
-        arg.call.push([...arguments])
+        arg.calls.push([...arguments])
         return func.call(this, arguments)
     }
-    arg.apply = [];
+    arg.calls = [];
     return arg;
 }
 
