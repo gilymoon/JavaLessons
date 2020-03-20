@@ -20,7 +20,7 @@ class User{
     }
     
     static createEmpty(){
-        new User('', null)
+        return new User('', null)
     }
 }
 
