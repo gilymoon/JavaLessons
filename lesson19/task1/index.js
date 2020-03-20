@@ -10,15 +10,15 @@ const vehicle = {
 
 const ship = {
     startMachine(){
-        console.log(`${name} lifting anchor up`);
-        this.move();
+        console.log(`${this.name} lifting anchor up`);
+        ship.move();
     },
     stopMachine(){
         this.stop();
-        console.log(`${name} lifting anchor down`);
+        ship.log(`${this.name} lifting anchor down`);
         
     },
-    __proto__:vehicle
+    __proto__: vehicle
 }
 
 
