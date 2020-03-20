@@ -19,3 +19,5 @@ User.prototype.setAge = function(age){
     if(age < 0) return false;
     else return age;
 }
+
+export {User}
