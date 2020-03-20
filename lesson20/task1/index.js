@@ -20,7 +20,8 @@ class User{
     }
     
     static createEmpty(){
-        this.name = '';
-        this.age = null;
+        new User('', null)
     }
 }
+
+export{User}
