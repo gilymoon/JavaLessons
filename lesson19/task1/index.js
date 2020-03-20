@@ -16,10 +16,10 @@ const ship = {
     stopMachine(){
         console.log(`${name} lifting anchor down`);
         ship.stop();
-    }
-    
+    },
+    __proto__:vehicle
 }
 
-Object.setPrototypeOf(ship, vehicle);
+
 export {vehicle};
 export {ship}
