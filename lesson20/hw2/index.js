@@ -26,10 +26,10 @@ class UserRepository {
     }
 
     getUserNames(){
-        return this._users.map(el => User.name);
+        return this._users.map(el => el.name);
     }
     getUserIds(){
-        return this._users.map(el => User.id);
+        return this._users.map(el => el.id);
     }
     getUserNameById(id){
         return this._users.map(el => {
