@@ -21,5 +21,4 @@ const ship = {
 }
 
 
-export {vehicle};
-export {ship}
+export {vehicle, ship}
