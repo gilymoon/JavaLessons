@@ -32,10 +32,12 @@ class UserRepository {
         console.log(this._users.map(el => el.id))
         return this._users.map(el => el.id);
     }
-    getUserNameById(id){
-        return this._users.map(el => {
-            if(el.id === id) return el.name;
-        })
+    getUserNameById(id) {
+        for (let user of this._users) {
+            if (user.id === id) {
+                return user.name;
+            }
+        }
     }
 
 }
