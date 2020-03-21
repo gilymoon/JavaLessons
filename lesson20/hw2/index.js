@@ -17,8 +17,8 @@ class User {
 }
 
 class UserRepository {
-    constructor(users){
-        this._users = Object.freeze(users);
+    constructor(_users){
+        this._users = Object.freeze(_users);
     }
 
     get users(){
