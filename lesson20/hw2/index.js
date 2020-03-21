@@ -40,8 +40,7 @@ class UserRepository {
 
 }
 
-const user1 = User(15, 'bob', 16);
-const user2 = User(1, 'bb', 6);
+
 
 
 export {User, UserRepository}
