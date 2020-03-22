@@ -8,3 +8,5 @@ function manageClasses(){
     const four = document.querySelector('four');
     four.classList.toggle('another-class');
 }
+
+export{manageClasses}
