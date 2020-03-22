@@ -1,6 +1,5 @@
 function setButton(buttonText){
-    document.querySelector('body').innerHTML = '<button>button text</button>';
-    document.querySelector('body').textContent = '<button>button text</button>';
+    document.querySelector('body').innerHTML = `<button>${buttonText}</button>`;
 }
 
 export {setButton}
