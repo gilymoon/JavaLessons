@@ -1,7 +1,7 @@
 const pages = document.querySelectorAll('.paginatioin__page');
 
 function handleClick(event){
-    console.log(event.target.getAttribute('data-page-number'))
+    console.log(event.target.dataset.pageNumber);
 }
 
 pages.forEach(page => {
