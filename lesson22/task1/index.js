@@ -9,7 +9,7 @@ const logTarget = (text, color) => {
 
 const btnClear = document.querySelector('.clear-btn');
 const btnRemove = document.querySelector('.remove-handlers-btn');
-const btnAttach = document.querySelector('attach-handlers-btn');
+const btnAttach = document.querySelector('.attach-handlers-btn');
 
 
 
@@ -17,23 +17,42 @@ function btnClearFunc() {
     eventsListElem.innerHTML = '';
 }
 
+    const logGreenDiv = logTarget.bind(null, 'DIV', 'green');
+    const logGreenP = logTarget.bind(null, 'P', 'green');
+    const logGreenSpan = logTarget.bind(null, 'SPAN', 'green');
 
-const logGreenDiv = logTarget.bind(null, 'DIV', 'green');
-const logGreenP = logTarget.bind(null, 'P', 'green');
-const logGreenSpan = logTarget.bind(null, 'SPAN', 'green');
+    const logGreyDiv = logTarget.bind(null, 'DIV', 'grey');
+    const logGreyP = logTarget.bind(null, 'P', 'grey');
+    const logGreySpan = logTarget.bind(null, 'SPAN', 'grey');
 
-const logGreyDiv = logTarget.bind(null, 'DIV', 'grey');
-const logGreyP = logTarget.bind(null, 'P', 'grey');
-const logGreySpan = logTarget.bind(null, 'SPAN', 'grey');
+function attachHandlers() {
+    divElem.addEventListener('click', logGreyDiv, true);
+    divElem.addEventListener('click', logGreenDiv);
 
-divElem.addEventListener('click', logGreyDiv, true);
-divElem.addEventListener('click', logGreenDiv);
+    pElem.addEventListener('click', logGreyP, true);
+    pElem.addEventListener('click', logGreenP);
 
-pElem.addEventListener('click', logGreyP, true);
-pElem.addEventListener('click', logGreenP);
+    spanElem.addEventListener('click', logGreySpan, true);
+    spanElem.addEventListener('click', logGreenSpan);
+}
 
-spanElem.addEventListener('click', logGreySpan, true);
-spanElem.addEventListener('click', logGreenSpan);   
+function removeHandlers(){
+    divElem.removeEventListener('click', logGreyDiv, true);
+    divElem.removeEventListener('click', logGreenDiv);
 
-const clearFunc = btnClearFunc();
+    pElem.removeEventListener('click', logGreyP, true);
+    pElem.removeEventListener('click', logGreenP);
+
+    spanElem.removeEventListener('click', logGreySpan, true);
+    spanElem.removeEventListener('click', logGreenSpan);
+}
+   
+
+const clearFunc = btnClearFunc.bind();
 btnClear.addEventListener('click', clearFunc);
+
+const attachFunc = attachHandlers.bind();
+btnAttach.addEventListener('click', attachFunc);
+
+const removeFunc = removeHandlers.bind();
+btnRemove.addEventListener('click', removeFunc);
