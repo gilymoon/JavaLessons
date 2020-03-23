@@ -1,6 +1,8 @@
 function createButton(buttonText){
     const butt = document.createElement('button');
-    document.querySelector('body').append(butt).innerHTML = buttonText;
+    const body = document.querySelector('body');
+    body.append(butt);
+    button.innerHTML = buttonText;
 }
 
 export {createButton}
