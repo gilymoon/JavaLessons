@@ -5,3 +5,4 @@ function handleClick(event){
 }
 
 allBtns.addEventListener('click', handleClick(allBtns[0]));
+allBtns.addEventListener('click', handleClick(allBtns[1]));
