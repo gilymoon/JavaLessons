@@ -4,5 +4,5 @@ function handleClick(event){
    console.log(event.target.textContent) ;
 }
 
-allBtns.addEventListener('click', handleClick(allBtns[0]));
-allBtns.addEventListener('click', handleClick(allBtns[1]));
+allBtns[0].addEventListener('click', handleClick);
+allBtns[1].addEventListener('click', handleClick);
