@@ -4,4 +4,4 @@ function handleClick(event){
    console.log(event.target.textContent) ;
 }
 
-btn.addEventListener('click', allBtns[0]);
+btn.addEventListener('click', handleClick(allBtns[0]));
