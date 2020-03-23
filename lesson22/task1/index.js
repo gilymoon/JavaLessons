@@ -56,3 +56,5 @@ btnAttach.addEventListener('click', attachFunc);
 
 const removeFunc = removeHandlers.bind();
 btnRemove.addEventListener('click', removeFunc);
+
+attachFunc();
