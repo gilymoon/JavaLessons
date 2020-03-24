@@ -31,16 +31,6 @@ const renderListItems = listItems => {
 
 renderListItems(tasks);
 
-const confirmEvent = document.querySelector('.list');
-const confirmItem = event => {
-    const confirmItem = tasks.find(item =>
-        item.text === event.target.parentNode.textContent);
-    confirmItem.done = event.target.checked;
-
-    renderListItems(tasks);
-};
-confirmEvent.addEventListener('click', confirmItem);
-
 const createBtn = document.querySelector('.create-task-btn');
 const pushToList = () => {
         const createInp = document.querySelector('.task-input');
@@ -52,3 +42,12 @@ const pushToList = () => {
     }
 createBtn.addEventListener('click', pushToList);
 
+const confirmEvent = document.querySelector('.list');
+const confirmItem = event => {
+    const confirmItem = tasks.find(item =>
+        item.text === event.target.parentNode.textContent);
+    confirmItem.done = event.target.checked;
+
+    renderListItems(tasks);
+};
+confirmEvent.addEventListener('click', confirmItem);
