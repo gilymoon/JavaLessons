@@ -1,13 +1,17 @@
-function getDiff(startDate, endDate){
-    const sDate = new Date(startDate);
-    const eDate = new Date(endDate);
-    const resDate = new Date(eDate.getMilliseconds() - sDate.getMilliseconds());
-    
-    const resDay = resDate.getDate();
-    const resHour = resDate.getHours();
-    const resMin = resDate.getMinutes();
-    const resSec = resDate.getSeconds();
-    return `${resDay}d ${resHour}h ${resMin}m ${resSec}s`
-}
+  
+const getDiff = (startDate, endDate) => {
 
-export{getDiff}
+    let diff = new Date(startDate) - new Date(endDate);
+
+    if (startDate < endDate)
+        diff = new Date(endDate) - new Date(startDate);
+
+    const day = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hour = Math.floor((diff / 1000 / 60 / 60) % 24);
+    const min = Math.floor((diff / 1000 / 60) % 60);
+    const sec = Math.floor((diff / 1000) % 60);
+
+    return `${day}d ${hour}h ${min}m ${sec}s`;
+};
+
+export { getDiff };
