@@ -1,9 +1,11 @@
 function studentsBirthDays(students){
-    const sortedStudents = students.sort(a, b => {
-        let aStudent = a.birthDate.splice('/');
-        const aDateStudent = new Date(aStudent);
-        let bStudent = b.birthDate.splice('/');
-        const bDateStudent = new Date(bStudent);
+    const sortedStudents = students.sort((a, b) => {
+        let aStudentBirth = a.birthDate;
+        const aStudentDateArr = aStudentBirth.split('/');
+        const aDateStudent = new Date(aStudentDateArr);
+        let bStudentBirth = b.birthDate;
+        const bStudentDateArr = bStudentBirth.split('/');
+        const bDateStudent = new Date(bStudentDateArr);
         if(aDateStudent > bDateStudent){
             return -1;
         }
@@ -12,3 +14,5 @@ function studentsBirthDays(students){
 }
 
 export{studentsBirthDays}
+
+[{name: 'Tom', birthDate:'01/15/2010'}, {name:'Ben', birthDate:'01/17/2008'}, {name: 'Sam', birthDate:'03/15/2010'}]
