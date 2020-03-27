@@ -5,7 +5,7 @@ function studentsBirthDays(students){
         let bStudent = b.birthDate.splice('/');
         const bDateStudent = new Date(bStudent);
         if(aDateStudent > bDateStudent){
-            return 1;
+            return -1;
         }
     })
     return sortedStudents;
