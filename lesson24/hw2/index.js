@@ -10,7 +10,7 @@ function studentsBirthDays(students){
         const bStudentDateArr = bStudentBirth.split('/');
         const bDateStudent = new Date(bStudentDateArr);
         if(aDateStudent > bDateStudent){
-            return -1;
+            return 1;
         }
     })
     const result = sortedStudents.reduce((acc, { name, birthDate }) => {
@@ -19,6 +19,7 @@ function studentsBirthDays(students){
     }, {});
     return result;
 }
+
 
 export{studentsBirthDays}
 
