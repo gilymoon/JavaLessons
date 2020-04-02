@@ -26,4 +26,5 @@ const calc = initValue => {
     return calculator
 }
 
+
 export{calc}
