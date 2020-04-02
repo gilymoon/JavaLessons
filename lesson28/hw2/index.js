@@ -16,4 +16,6 @@ function maxFibonacci(num){
 
 }
 
+//console.log(maxFibonacci(15));
+
 export{maxFibonacci}
