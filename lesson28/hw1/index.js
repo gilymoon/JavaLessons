@@ -83,7 +83,7 @@ function shmoment(date){
     }
 }
 
-const dateRand = new Date(2020, 0, 7, 17, 17, 17);
-const res = shmoment(dateRand).add('minutes', 2).add('days', 8).subtract('years', 1).result();
+// const dateRand = new Date(2020, 0, 7, 17, 17, 17);
+// const res = shmoment(dateRand).add('minutes', 2).add('days', 8).subtract('years', 1).result();
 
 export{shmoment}
