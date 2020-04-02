@@ -13,7 +13,17 @@ const calc = initValue => {
         substract(value){
             result -= value;
             return this;
+        },
+        div(value){
+            result /= value;
+            return this;
+        },
+        result(){
+            return result
         }
 
-    }
+    };
+    return calculator
 }
+
+export{calc}
