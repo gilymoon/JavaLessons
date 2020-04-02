@@ -7,7 +7,7 @@ function shmoment(date){
                     return now.setFullYear(now.getFullYear() + value);
                     
                 case 'months':
-                    return now.setMonth(now.setMonth() + value);
+                    return now.setMonth(now.getMonth() + value);
                     
                 case 'days':
                     return now.setDate(now.getDate() + value);
@@ -32,7 +32,7 @@ function shmoment(date){
                     return now.setFullYear(now.getFullYear() - value);
                     
                 case 'months':
-                    return now.setMonth(now.setMonth() - value);
+                    return now.setMonth(now.getMonth() - value);
                     
                 case 'days':
                     return now.setDate(now.getDate() - value);
@@ -82,5 +82,8 @@ function shmoment(date){
         }
     }
 }
+
+const dateRand = new Date(2020, 0, 7, 17, 17, 17);
+const res = shmoment(dateRand).add('minutes', 2).add('days', 8).subtract('years', 1).result();
 
 export{shmoment}
