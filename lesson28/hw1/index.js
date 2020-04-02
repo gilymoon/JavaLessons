@@ -40,4 +40,4 @@ const shmoment = date => {
     return calculator;
 };
 
-export default shmoment;
+export {shmoment}
