@@ -1,5 +1,3 @@
-
-
 function maxFibonacci(num){
     if(num < 0) return;
     let a = 1;
