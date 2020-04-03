@@ -1,22 +1,17 @@
-function maxFibonacci(num){
-    if(num < 0) return;
-    if(num < 1) return 1;
-    if(!Number.isInteger(num))Math.round(num);
-    let a = 1;
-    let b = 1;
-    while(true){
-        let tmp = a + b;
-        if( tmp > num){
-            return b;
-        }
-        a = b;
-        b = tmp;
+function fibonacci(num) {
+    if (num < 1) {
+        return 1;
     }
-
-
+    return fibonacci(num - 1) + fibonacci(num - 2);
 }
-
-console.log(maxFibonacci(0.1));
-
-
-//export{maxFibonacci}
+export const maxFibonacci = num => {
+    let fib = 0;
+    let index = 0; 
+    while (true) {
+        const nextFib = fibonacci(index);
+        if (nextFib > num) break;
+        fib = nextFib;
+        index += 1;
+    }
+    return fib;
+};
