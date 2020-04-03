@@ -1,7 +1,7 @@
 function maxFibonacci(num){
     if(num < 0) return;
     if(num < 1) return 1;
-    //if(!Number.isInteger(num))Math.round(num);
+    if(!Number.isInteger(num))Math.round(num);
     let a = 1;
     let b = 1;
     while(true){
@@ -16,7 +16,7 @@ function maxFibonacci(num){
 
 }
 
-//console.log(maxFibonacci(0.1));
+console.log(maxFibonacci(0.1));
 
 
-export{maxFibonacci}
+//export{maxFibonacci}
