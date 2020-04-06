@@ -10,8 +10,8 @@ export function sayName() {
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя студента 
 // ... your code here
 
-const func1 = student;
-func1.sayName();
+const func1 = sayName;
+func1.call(student);
 
 
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя 'Bruce' (используйте другой объект)
