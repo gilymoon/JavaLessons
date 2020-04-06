@@ -8,3 +8,5 @@ function requestUserData(userId, callback){
         setTimeout(callback(obj), Math.random()*3);
     }
 }
+
+export {requestUserData}
