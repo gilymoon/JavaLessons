@@ -6,7 +6,7 @@ function requestUserData(userId, callback){
         return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
       }
     if(userId === 'broken'){
-        callback(null, 'Failed to load user data');
+        setTimeout(callback(null, 'Failed to load user data'), (getRandomIntInclusive(1, 3))*1000);
     }
     else{
 
@@ -14,6 +14,6 @@ function requestUserData(userId, callback){
     }
 }
 
-requestUserData('userId777', func);
+//requestUserData('userId777', func);
 
 export {requestUserData}
