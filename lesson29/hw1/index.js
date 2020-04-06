@@ -5,7 +5,7 @@ function requestUserData(userId, callback){
     }
     else{
 
-        setTimeout(callback(obj), Math.random()*(3000-1000)+1000);
+        setTimeout(callback(obj), (Math.random()*(3-1)+1)*1000);
     }
 }
 
