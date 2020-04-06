@@ -9,23 +9,16 @@ export function sayName() {
 
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя студента 
 // ... your code here
-
 const func1 = student;
 func1.sayName();
-
 
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя 'Bruce' (используйте другой объект)
 // ... your code here
 
 const func2 = student;
-func2.call({name: 'Bruce'});
+func2.call({name: 'Bruce'}, []);
 
 /* ===> 2 <=== */
-
-// вызовите ф-цию greeting так, чтобы в консоль вывелось 
-// 'Hello, Bob Marley. Welcome to the Microsoft'
-// используйте объект company
-// ... your code here
 const company = {
     companyName: 'Microsoft'
 };
@@ -34,8 +27,12 @@ function greeting(firstName, lastName) {
     console.log(`Hello, ${firstName} ${lastName}. Welcome to the ${this.companyName}`);
 }
 
+// вызовите ф-цию greeting так, чтобы в консоль вывелось 
+// 'Hello, Bob Marley. Welcome to the Microsoft'
+// используйте объект company
+// ... your code here
 const func3 = greeting;
-func3.call(company, 'Bob', 'Marley')
+func3.apply(company, ['Bob', 'Marley'])
 
 
 /* ===> 3 <=== */
@@ -54,8 +51,7 @@ function getPopulation(population) {
 // ... your code here
 
 const func4 = getPopulation;
-func4.call(country, 43000);
-
+func4.apply(country, [43000]);
 
 /* ===> 4 <=== */
 const transaction = {
@@ -81,4 +77,4 @@ const anotherTransaction = {
 // ... your code here
 
 const func5 = transaction.printTransaction;
-func5.call(anotherTransaction);
+func5.apply(anotherTransaction, []);
