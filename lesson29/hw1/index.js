@@ -10,7 +10,7 @@ function requestUserData(userId, callback){
     }
     else{
 
-        setTimeout(callback(obj), getRandomIntInclusive(1, 3));
+        setTimeout(callback(obj), (getRandomIntInclusive(1, 3))*1000);
     }
 }
 
