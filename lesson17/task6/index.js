@@ -43,7 +43,7 @@ function greeting(firstName, lastName) {
  * specialGreeting не должна принимать ни одного аргумента
  */
 
-const specialGreeting = greeting.bind(company);
+const specialGreeting = greeting('Bob', 'Marley').bind(company);
 specialGreeting();
 
 /* ===> 3 <=== */
