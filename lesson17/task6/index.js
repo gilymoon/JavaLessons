@@ -13,7 +13,7 @@ function sayName() {
  */
 
  const sayStudentName = sayName.bind(student);
-
+sayStudentName();
 
 /*
  * создайте ф-цию sayBruceName которая будет выводить в консоль имя 'Bruce'
@@ -25,7 +25,7 @@ function sayName() {
  }
 
  const sayBruceName = sayName.bind(stBruce);
-
+sayBruceName();
 
 /* ===> 2 <=== */
 const company = {
@@ -44,6 +44,7 @@ function greeting(firstName, lastName) {
  */
 
 const specialGreeting = greeting.bind(company);
+specialGreeting();
 
 /* ===> 3 <=== */
 const country = {
@@ -63,7 +64,7 @@ function getPopulation(population) {
  */
 
 const getUkrainePopulation = getPopulation.bind(country);
-
+getUkrainePopulation();
 /* ===> 4 <=== */
 const transaction = {
     amount: 1200,
@@ -90,3 +91,4 @@ const anotherTransaction = {
  */
 
  const printSpecialTransaction = transaction.printTransaction.bind(anotherTransaction);
+ printSpecialTransaction();
