@@ -20,11 +20,9 @@ sayStudentName();
  * используйте ф-цию sayName и .bind с нужным объектом
  */
 
- const stBruce = {
-     name: 'Bruce'
- }
+ 
 
- const sayBruceName = sayName.bind(stBruce);
+ const sayBruceName = sayName.bind({name:'Bruce'});
 sayBruceName();
 
 /* ===> 2 <=== */
