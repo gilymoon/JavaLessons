@@ -1,19 +1,17 @@
-function requestUserData(userId, callback){
-    const obj = {'userId': `${userId}`, email: `${userId}@example.com`};
-    function getRandomIntInclusive(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
-      }
-    if(userId === 'broken'){
-        setTimeout(callback(null, 'Failed to load user data'), (getRandomIntInclusive(1, 3))*1000);
+const getRandomDelay = (from, to) =>
+    from + Math.random() * (to - from);
+export const requestUserData = (userId, callback) => {
+    const randomDelay = getRandomDelay(1000, 3000);
+    if (userId === 'broken') {
+        setTimeout(() => {
+            callback(null, 'Failed to load user data');
+        }, randomDelay);
+    } else {
+        setTimeout(() => {
+            callback({
+                userId,
+                email: `${userId}@example.com`
+            });
+        }, randomDelay);
     }
-    else{
-
-        setTimeout(callback(obj), (getRandomIntInclusive(1, 3))*1000);
-    }
-}
-
-//requestUserData('userId777', func);
-
-export {requestUserData}
+};
