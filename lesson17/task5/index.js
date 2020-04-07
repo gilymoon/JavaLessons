@@ -16,7 +16,7 @@ func1.apply(student, []);
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя 'Bruce' (используйте другой объект)
 // ... your code here
 
-const func2 = student;
+const func2 = sayName;
 func2.call({name: 'Bruce'}, []);
 
 /* ===> 2 <=== */
