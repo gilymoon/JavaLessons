@@ -6,3 +6,4 @@ function delay(time){
     })
 }
 
+export {delay}
