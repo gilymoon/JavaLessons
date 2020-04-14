@@ -14,11 +14,3 @@ export const getTaskById = taskId => {
     .then(response => response.json())
   }
 
-/* примеры использования */
-getTasksList().then(tasksList => {
-    console.log(tasksList); // [{"id":"1", "done":false ... }, {"id":"2", "done":true ... }, ...]
-});
-
-getTaskById('2').then(taskData => {
-    console.log(taskData); // {"id":"1", "done":false ... }
-});
