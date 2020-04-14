@@ -24,3 +24,5 @@ getTasksList().then(tasksList => {
 getTaskById('2').then(taskData => {
     console.log(taskData); // {"id":"1", "done":false ... }
 });
+
+export {getTaskById, getTasksList}
