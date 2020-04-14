@@ -12,9 +12,9 @@ const getTasksList = () => {
 const getTaskById = (id) => {
     return fetch(baseUrl)
     .then(response => response.json())
-    .then(arr => arr.filter(obj => {
-        if(obj.id = Number(id)) return obj}))
-}
+    .then(arr => arr[+`${id}` - 1])
+        
+  }
 
 /* примеры использования */
 getTasksList().then(tasksList => {
