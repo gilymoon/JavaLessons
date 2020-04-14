@@ -9,10 +9,10 @@ const getTasksList = () => {
 
 /* getTaskById code here */
 
-const getTaskById = (id) => {
+const getTaskById = (taskId) => {
     return fetch(baseUrl)
     .then(response => response.json())
-    .then(arr => arr[+`${id}` - 1])
+    .then(arr => arr[+`${taskId}` - 1])
         
   }
 
