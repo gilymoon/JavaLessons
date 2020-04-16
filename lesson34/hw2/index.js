@@ -7,6 +7,9 @@ const getUsersList = () =>{
         method: "GET",
 
     })
+        .then(function(response){
+            return response.json();
+        })
 }
 
 /* getUserById code here */
@@ -14,6 +17,10 @@ const getUsersList = () =>{
 const getUserById = id =>{
     return fetch(`${baseUrl}${id}`, {
         method: "GET"
+    })
+    
+    .then(function(response){
+        return response.json();
     })
 }
 
@@ -39,6 +46,10 @@ const updateUser = (updatedUser) =>{
         },
         body: JSON.stringify(updatedUser)
     })
+    
+    .then(function(response){
+        return response.json();
+    })
 }
 
 /* deleteUser code here */
@@ -46,5 +57,9 @@ const updateUser = (updatedUser) =>{
 const deleteUser = () =>{
     return fetch(`${baseUrl}${id}`, {
         method: "DELETE"
+    })
+    
+    .then(function(response){
+        return response.json();
     })
 }
