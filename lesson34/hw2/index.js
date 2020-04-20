@@ -34,24 +34,20 @@ export const createUser = (newUser) => {
 
 /* updateUser code here */
 
-export const updateUser = (updatedUser) => {
+export const updateUser = (id, updatedUser) => {
   return fetch(`${baseUrl}/${id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json;charset=utf-8",
     },
     body: JSON.stringify(updatedUser),
-  }).then(function (response) {
-    return response.json();
-  });
+  })
 };
 
 /* deleteUser code here */
 
-export const deleteUser = () => {
+export const deleteUser = (id) => {
   return fetch(`${baseUrl}/${id}`, {
     method: "DELETE",
-  }).then(function (response) {
-    return response.json();
-  });
+  })
 };
