@@ -11,9 +11,7 @@ export const getUsersList = () => {
 /* getUserById code here */
 
 export const getUserById = (id) => {
-  return fetch(`${baseUrl}/${id}`, {
-    method: "GET",
-  }).then(function (response) {
+  return fetch(`${baseUrl}/${id}`).then(function (response) {
     return response.json();
   });
 };
