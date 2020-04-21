@@ -1,4 +1,4 @@
-const baseUrl = "https://5e97372677f54300163394d5.mockapi.io/api/v1/USERS";
+const baseUrl = "https://5e97372677f54300163394d5.mockapi.io/api/v1/users";
 
 /* getUsersList code here */
 
