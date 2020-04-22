@@ -21,7 +21,7 @@ const getUser = () => {
 };
 
 function sendUserToServer(user){
-    user = getUser;
+    user = getUser();
     fetch(baseUrl, {
         method: 'POST',
         headers: {
