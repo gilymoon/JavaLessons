@@ -7,6 +7,6 @@ export const fetchUser = async userId => {
         const userData = await response.json();
         return userData;
     } catch (err) {
-        throw new Error('Promise rejected');
+        throw new Error('Failed to fetch user');
     }
 };
