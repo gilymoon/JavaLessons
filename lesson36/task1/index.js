@@ -7,8 +7,8 @@ export const fetchUser = (id) =>{
         if(err.status === 404){
             return null;
         }
-        else{
-            
-        }
     })
+    .catch(() => {
+        console.log('Promise rejected');
+      })
 }
